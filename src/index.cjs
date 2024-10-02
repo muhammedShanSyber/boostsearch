@@ -8,12 +8,12 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
-const youtubeApiKey = 'AIzaSyAB9LgCmZo97f1ZWGydyODxgqlrWK3rn0o'; 
-const coreApiKey = 'ndZsojxJDglMEkX6WYcray4QK8t7iApR'; 
+const youtubeApiKey = 'youtube_api_key'; 
+const coreApiKey = 'core_api_key'; 
 const pubmedSearchUrl = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi';
 const pubmedFetchUrl = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi';
-const googleApiKey = ' AIzaSyBOG6dRMPpSWePX0LF29aSfGDBDRyM3Xak ';
-const googleCx = '503fd7984264940e6';
+const googleApiKey = 'google_api_key';
+const googleCx = 'google_cx_id';
 
 app.get('/api/search', async (req, res) => {
     const { q } = req.query;
